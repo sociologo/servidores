@@ -165,7 +165,13 @@ Y asi se ve:
 
 ![image](https://github.com/user-attachments/assets/763bf478-1111-458c-bea8-aaa1daeece4b)
 
+![image](https://github.com/user-attachments/assets/6078a862-d0e5-4e27-b847-2232eb3d4f55)
 
+Configuramos las variables de entorno que es la secret key sin comillas:
+
+![image](https://github.com/user-attachments/assets/23eb1197-1068-4dae-a57c-3e79f3221ede)
+
+![image](https://github.com/user-attachments/assets/74351d19-6c3a-4191-ba72-c4156e1aa482)
 
 
 
