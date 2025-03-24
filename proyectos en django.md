@@ -146,7 +146,11 @@ Donde iremos a App platform y no a droplet
 
 Vamos a crear app y conectamos nuestro repositorio Github
 
-![image](https://github.com/user-attachments/assets/72bc50fa-1880-4403-86ab-080f727e9840)
+Resulta clave indicar la ruta en la estructura del directorio:
+
+![image](https://github.com/user-attachments/assets/8397e822-0638-4beb-a49e-43256e209b4e)
+
+![image](https://github.com/user-attachments/assets/89a821f3-4662-49b8-a367-cbcc49aa74b0)
 
 
 
