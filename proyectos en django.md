@@ -174,6 +174,11 @@ Configuramos las variables de entorno que es la secret key sin comillas:
 ![image](https://github.com/user-attachments/assets/74351d19-6c3a-4191-ba72-c4156e1aa482)
 
 
+# 4 Configuramos los archivos estaticos
+
+# 5 Construimos una base de datos
+
+
 
 
 
