@@ -178,12 +178,50 @@ Configuramos las variables de entorno que es la secret key sin comillas:
 
 # 5 Construimos una base de datos
 
+Constuimos una base de datos en postgres.
+
+Copiamos la cadena de conexion y la asociamos a una variable de entorno que configuramos en Actions Manage env vars de la app en DigitalOcean
 
 
+DATABASE_URL = postgresql://doadmin:show-password@db-postgresql-sfo3-81712-do-user-18172787-0.m.db.ondigitalocean.com:25060/defaultdb?sslmode=require
 
+![image](https://github.com/user-attachments/assets/c0bca814-1e4a-4658-bb96-44fecea3ef50)
 
+![image](https://github.com/user-attachments/assets/56ba4ab8-925f-4e97-b7fa-948542e69c05)
 
+Establecemos los correctos parametros en la configuracion de nuestra base de datos postgres
+```
+import os
+from .base import *
 
+DEBUG = False
+ALLOWED_HOSTS = ['*']
+
+from urllib.parse import urlparse
+DATABASE_URL = os.environ.get('DATABASE_URL')
+db_info = urlparse(DATABASE_URL)
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'defaultdb',
+        'USER': db_info.username,
+        'PASSWORD': db_info.password,
+        'HOST': db_info.hostname,
+        'PORT': db_info.port,
+        'OPTIONS': {'sslmode': 'require'},
+    }
+}
+
+STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [
+   BASE_DIR / "static",
+]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+```
 
 
 
