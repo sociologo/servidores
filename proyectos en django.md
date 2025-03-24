@@ -18,8 +18,8 @@ https://www.youtube.com/watch?v=gKlsuUhfSpo
 C:\Users\chris> cd /
 C:\> cd mis_entornos/entorno_3/Scripts
 C:\mis_entornos\entorno_3\Scripts> activate
-(entorno_3) C:\mis_entornos\entorno_3\Scripts> cd \mis_proyectos\emp3\empleado
-(entorno_3) C:\mis_proyectos\emp3\empleado> python manage.py runserver
+(entorno_3) C:\mis_proyectos\emp3\empleado>cd \Users\chris\Documentos\GitHub\django\emp3\empleado
+(entorno_3) C:\Users\chris\Documentos\GitHub\django\emp3\empleado>python manage.py runserver
 ```
 
 2 Instalamos Gunicorn
@@ -33,7 +33,7 @@ C:\mis_entornos\entorno_3\Scripts> activate
 El cual automaticamente nos carga todos los paquetes y dependencias que tenemos asociados a nuestro proyecto:
 
 ```
-(entorno_3) C:\mis_proyectos\emp3\empleado>pip freeze > requirements.txt
+(entorno_3) C:\Users\chris\Documentos\GitHub\django\emp3\empleado>pip freeze > requirements.txt
 ```
 
 ```
@@ -118,7 +118,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 5 SECRET_KEY
 
-Vsmos a nuestro archivo **base.py** de **settings**
+Vamos a nuestro archivo **base.py** de **settings**
 
 Copiemos SECRET_KEY y la guardamos y hacemos el siguiente reemplazo en el archivo **base.py**:
 SECRET_KEY = 'django-insecure-9xh%=ob5sj*g*r5&ii^r$mu9bs0w*t09ni*vko67=*z402som8'
@@ -135,7 +135,18 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # 2 Lo subimos a Github
 
+# 3 Configuramos DigitalOcean
 
+Vamos a https://cloud.digitalocean.com/apps
+
+Donde iremos a App platform y no a droplet
+
+![image](https://github.com/user-attachments/assets/9e4f2efa-c840-4261-a7c5-99401295d09d)
+
+
+Vamos a crear app y conectamos nuestro repositorio Github
+
+![image](https://github.com/user-attachments/assets/72bc50fa-1880-4403-86ab-080f727e9840)
 
 
 
