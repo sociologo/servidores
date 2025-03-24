@@ -137,6 +137,15 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # 3 Configuramos DigitalOcean
 
+En nuestro proyecto debemos agregar un archivo sin extension llamado Procfile a la altura del **manage.py**
+
+```
+C:\Users\chris\Documentos\GitHub\emp3\empleado>echo web: gunicorn empleado.wsgi > Procfile
+```
+
+![image](https://github.com/user-attachments/assets/0501f68d-8b8a-479f-a311-28224b613bb2)
+
+
 Vamos a https://cloud.digitalocean.com/apps
 
 Donde iremos a App platform y no a droplet
@@ -152,6 +161,9 @@ Resulta clave indicar la ruta en la estructura del directorio:
 
 ![image](https://github.com/user-attachments/assets/89a821f3-4662-49b8-a367-cbcc49aa74b0)
 
+Y asi se ve:
+
+![image](https://github.com/user-attachments/assets/763bf478-1111-458c-bea8-aaa1daeece4b)
 
 
 
