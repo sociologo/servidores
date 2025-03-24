@@ -1,19 +1,161 @@
+# Implementar una aplicación web Django en Digital Ocean
+
+***
+***
+Deploy a Django web app to Digital Ocean
+https://www.youtube.com/watch?v=gKlsuUhfSpo
+
 # Índice
 
 * [1 La vista ListView](#1-La-vista-ListView)
   * [a Listar todos los empleados](#a-Listar-todos-los-empleados)
 
-# 1 La vista ListView
+# 1 Preparamos nuestro proyecto
 
-https://www.youtube.com/watch?v=Td3lirXIeRI
-Digital Ocean Tutorial – Deploy Django and Other Frameworks
+1 Tenemos ya listo un proyecto django conectado a postgres en local el cual arrancamos con:
+
+```
+C:\Users\chris> cd /
+C:\> cd mis_entornos/entorno_3/Scripts
+C:\mis_entornos\entorno_3\Scripts> activate
+(entorno_3) C:\mis_entornos\entorno_3\Scripts> cd \mis_proyectos\emp3\empleado
+(entorno_3) C:\mis_proyectos\emp3\empleado> python manage.py runserver
+```
+
+2 Instalamos Gunicorn
+
+```
+(entorno_3) C:\mis_proyectos\emp3\empleado>pip install gunicorn
+```
+
+3 En nuestra aplicacion creamos un archivo requirements.txt
+
+El cual automaticamente nos carga todos los paquetes y dependencias que tenemos asociados a nuestro proyecto:
+
+```
+(entorno_3) C:\mis_proyectos\emp3\empleado>pip freeze > requirements.txt
+```
+
+```
+asgiref==3.8.1
+Django==5.1.6
+django-ckeditor==6.7.2
+django-js-asset==3.0.1
+gunicorn==23.0.0
+packaging==24.2
+pillow==11.1.0
+psycopg2==2.9.10
+psycopg2-binary==2.9.10
+sqlparse==0.5.3
+tzdata==2025.1
+```
+
+4 Preparamos nuestros archivos estaticos.
+
+Para ello vamos al archivo **local.py** de **settings**
+
+El original es:
+```
+from .base import *
+
+DEBUG = True
+
+ALLOWED_HOSTS = []
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dbempleado101',
+        'USER': 'chris101',
+        'PASSWORD': 'nueva123456',
+        'HOST': 'localhost',
+        'PORT': '5432'
+    }
+}
+
+STATIC_URL = 'static/'
+
+STATICFILES_DIRS = [
+   BASE_DIR / "static",
+]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+```
+
+debemos agregar STATIC_ROOT importando os, cambiar DEBUG a False, agregar un ALLOWED_HOST '*'
+
+```
+import os
+
+from .base import *
+
+DEBUG = False
+ALLOWED_HOSTS = ['*']
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dbempleado101',
+        'USER': 'chris101',
+        'PASSWORD': 'nueva123456',
+        'HOST': 'localhost',
+        'PORT': '5432'
+    }
+}
+
+STATIC_URL = 'static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = [
+   BASE_DIR / "static",
+]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+```
+
+5 SECRET_KEY
+
+Vsmos a nuestro archivo **base.py** de **settings**
+
+Copiemos SECRET_KEY y la guardamos y hacemos el siguiente reemplazo en el archivo **base.py**:
+SECRET_KEY = 'django-insecure-9xh%=ob5sj*g*r5&ii^r$mu9bs0w*t09ni*vko67=*z402som8'
+
+```
+import os
+
+# some code
+
+SECRET_KEY = os.environ.get('SECRET_KEY')
+
+# some code
+```
+
+# 2 Lo subimos a Github
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## a Listar todos los empleados
 
 
-https://www.youtube.com/watch?v=RklPhT3UPP4
-Deploy Django Project on DigitalOcean App Platform.
 
-https://www.youtube.com/watch?v=RklPhT3UPP4&t=1338s
-Deploy Django Project on DigitalOcean App Platform.
+
+
+
