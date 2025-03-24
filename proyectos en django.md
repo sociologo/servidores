@@ -224,6 +224,12 @@ MEDIA_ROOT = BASE_DIR / 'media'
 ```
 
 
+Es fundamental establecer correctamente las variables de entorno incluyendo DJANGO_SETTING_MODULE 
+
+![image](https://github.com/user-attachments/assets/7addac5c-a8ac-427a-aee1-814b94f408c3)
+
+
+
 
 
 
