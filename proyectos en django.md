@@ -31,7 +31,7 @@ C:\mis_entornos\entorno_3\Scripts> activate
 
 # Copia del proyecto en un nuevo repositorio
 
-Llevamos nuestro proyecto a un nuevo repositorio y lo abrimos desde la carpeta vinculada a el en local
+Llevamos nuestro proyecto a un nuevo repositorio y lo abrimos desde la carpeta vinculada a él en local.
 
 
 <p align="center">
