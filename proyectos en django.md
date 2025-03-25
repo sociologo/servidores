@@ -46,37 +46,38 @@ C:\mis_entornos\entorno_3\Scripts> activate
 (entorno_3) C:\GitHub\emp3\empleado>python manage.py runserver
 ```
 
-
-
-
-
 2 Instalamos Gunicorn
 
-```
-(entorno_3) C:\mis_proyectos\emp3\empleado>pip install gunicorn
-```
-
-3 En nuestra aplicacion creamos un archivo requirements.txt
-
-El cual automaticamente nos carga todos los paquetes y dependencias que tenemos asociados a nuestro proyecto:
+Lo hacemos para asegurarnos de que nuestra aplicacion Django sea capaz de comunicarse con los servidores que trabajan tras bambalinas en DigitalOcean.
 
 ```
-(entorno_3) C:\Users\chris\Documentos\GitHub\django\emp3\empleado>pip freeze > requirements.txt
+(entorno_3) C:\GitHub\emp3\empleado>pip install gunicorn
+Requirement already satisfied: gunicorn in c:\mis_entornos\entorno_3\lib\site-packages (23.0.0)
+Requirement already satisfied: packaging in c:\mis_entornos\entorno_3\lib\site-packages (from gunicorn) (24.2)
 ```
 
+3 En nuestra aplicación creamos un archivo requirements.txt
+
+Lo hacemos para tener el registro de todos nuestros paquetes.
+
 ```
-asgiref==3.8.1
-Django==5.1.6
-django-ckeditor==6.7.2
-django-js-asset==3.0.1
-gunicorn==23.0.0
-packaging==24.2
-pillow==11.1.0
-psycopg2==2.9.10
-psycopg2-binary==2.9.10
-sqlparse==0.5.3
-tzdata==2025.1
+(entorno_3) C:\GitHub\emp3\empleado> pip freeze > requirements.txt
 ```
+
+<p align="center">
+  <img src="[https://github.com/user-attachments/assets/802bfe61-0a42-40e4-9095-1ced14c2279b](https://github.com/user-attachments/assets/b73fc20c-176a-4135-a11c-6ce2a6c3a69d)" alt="image" width="60%">
+</p>
+
+
+
+
+
+
+
+
+
+
+
 
 4 Preparamos nuestros archivos estaticos.
 
