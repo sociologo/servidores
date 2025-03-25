@@ -29,9 +29,11 @@ C:\mis_entornos\entorno_3\Scripts> activate
   <img src="https://github.com/user-attachments/assets/5cfed8aa-2168-4a66-8c62-07fad3823aeb" alt="image" width="60%">
 </p>
 
+# Copia del proyecto en un nuevo repositorio
 
+Llevamos nuestro proyecto a un nuevo repositorio y lo abrimos desde la carpeta vinculada a el en local
 
-
+![image](https://github.com/user-attachments/assets/6f290e91-2c6a-4dd0-a241-1f119752ec83)
 
 
 
