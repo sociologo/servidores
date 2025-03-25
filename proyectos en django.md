@@ -182,10 +182,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 ![image](https://github.com/user-attachments/assets/a27a7c66-8c27-4794-984d-2bef2bc51c6c)
 
-5 Configuramos la variable de entorno que es la secret key sin comillas:
+5 Configuramos la variable de entorno que es la secret key sin comillas y la encriptamos:
 
+![image](https://github.com/user-attachments/assets/c4ff9e68-9e43-4e29-9bc8-b2e16c1f0c87)
 
+6 Le damos un nombre a la app y cramos la aplicacion
 
+![image](https://github.com/user-attachments/assets/ee7961ec-d678-4f82-bfb2-b304519a1976)
 
 <br>
 <br>
