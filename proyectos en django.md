@@ -165,7 +165,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
   <img src="https://github.com/user-attachments/assets/7d4ffa5a-f6dd-4c1e-a6c3-0690666a3094" alt="image" width="60%">
 </p>
 
+2 Conectamos a GitHub y seleccionamos **autodeploy** para que cada cambio en el repositorio se actualice automaticamente en el servidor, 
+renombramos al aplicacion, seleccionamos los recursos mas baratos
 
+
+3 Modificamos el run command
 
 <br>
 <br>
