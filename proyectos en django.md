@@ -68,16 +68,6 @@ Lo hacemos para tener el registro de todos nuestros paquetes.
   <img src="https://github.com/user-attachments/assets/30d77c72-013e-4f00-b039-aa4721de9869" alt="image" width="60%">
 </p>
 
-
-
-
-
-
-
-
-
-
-
 4 Preparamos nuestros archivos estaticos.
 
 Para ello vamos al archivo **local.py** de **settings**
@@ -167,8 +157,33 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # some code
 ```
 
-
 # 2 Configuramos DigitalOcean
+
+1 Vamos a la pagina `https://cloud.digitalocean.com/apps`
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7d4ffa5a-f6dd-4c1e-a6c3-0690666a3094" alt="image" width="60%">
+</p>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+***
+***
+
+
+
+
+
+
+
 
 En nuestro proyecto debemos agregar un archivo sin extension llamado Procfile a la altura del **manage.py**
 
