@@ -12,11 +12,18 @@ https://www.youtube.com/watch?v=gKlsuUhfSpo
 
 # 1 Nuestro proyecto original
 
-1 Tenemos listo el proyecto django **emp3** conectado a postgres en local vinculado al repositorio https://github.com/sociologo/django. 
+1 Tenemos listo el proyecto django **emp3** conectado a postgres en local vinculado al repositorio https://github.com/sociologo/django que arrancamos con:
+
+```bash
+C:\Users\chris> cd /
+C:\> cd mis_entornos/entorno_3/Scripts
+C:\mis_entornos\entorno_3\Scripts> activate
+(entorno_3) C:\mis_entornos\entorno_3\Scripts> cd \GitHub\django\emp3\empleado
+(entorno_3) C:\GitHub\django\emp3\empleado> python manage.py runserver
+```
 
 <br>
 <br>
-
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5cfed8aa-2168-4a66-8c62-07fad3823aeb" alt="image" width="60%">
@@ -26,15 +33,7 @@ https://www.youtube.com/watch?v=gKlsuUhfSpo
 
 
 
-lo arrancamos con:
 
-```
-C:\Users\chris> cd /
-C:\> cd mis_entornos/entorno_3/Scripts
-C:\mis_entornos\entorno_3\Scripts> activate
-(entorno_3) C:\mis_entornos\entorno_3\Scripts> cd \GitHub\django\emp3\empleado
-(entorno_3) C:\GitHub\django\emp3\empleado> python manage.py runserver
-```
 
 
 
