@@ -33,9 +33,9 @@ C:\mis_entornos\entorno_3\Scripts> activate
 
 Llevamos nuestro proyecto a un nuevo repositorio y lo abrimos desde la carpeta vinculada a el en local
 
-![image](https://github.com/user-attachments/assets/6f290e91-2c6a-4dd0-a241-1f119752ec83)
-
-
+<p align="center">
+  <img src="[https://github.com/user-attachments/assets/5cfed8aa-2168-4a66-8c62-07fad3823aeb](https://github.com/user-attachments/assets/6f290e91-2c6a-4dd0-a241-1f119752ec83)" alt="image" width="60%">
+</p>
 
 
 
