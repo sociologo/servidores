@@ -149,9 +149,12 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 5 SECRET_KEY
 
+Debemos sacar el valor en duro de SECRET_KEY de nuestro proyecto para poder clonarlo en el servidor de DigitalOcean, valor que vamos a ingresar como variable de entorno en nuestro servidor.
+
 Vamos a nuestro archivo **base.py** de **settings**
 
 Copiemos SECRET_KEY y la guardamos y hacemos el siguiente reemplazo en el archivo **base.py**:
+
 SECRET_KEY = 'django-insecure-9xh%=ob5sj*g*r5&ii^r$mu9bs0w*t09ni*vko67=*z402som8'
 
 ```
@@ -164,9 +167,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # some code
 ```
 
-# 2 Lo subimos a Github
 
-# 3 Configuramos DigitalOcean
+#2 Configuramos DigitalOcean
 
 En nuestro proyecto debemos agregar un archivo sin extension llamado Procfile a la altura del **manage.py**
 
