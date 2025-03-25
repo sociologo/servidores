@@ -65,9 +65,8 @@ Lo hacemos para tener el registro de todos nuestros paquetes.
 ```
 
 <p align="center">
-  <img src="[https://github.com/user-attachments/assets/802bfe61-0a42-40e4-9095-1ced14c2279b](https://github.com/user-attachments/assets/b73fc20c-176a-4135-a11c-6ce2a6c3a69d)" alt="image" width="60%">
+  <img src="https://github.com/user-attachments/assets/30d77c72-013e-4f00-b039-aa4721de9869" alt="image" width="60%">
 </p>
-
 
 
 
