@@ -2,8 +2,11 @@
 
 ***
 ***
-Deploy a Django web app to Digital Ocean
+Deploy a Django web app to Digital Ocean\
 https://www.youtube.com/watch?v=gKlsuUhfSpo
+
+How To Deploy a Django App on App Platform\
+https://www.digitalocean.com/community/tutorials/how-to-deploy-django-to-app-platform
 
 # Índice
 
