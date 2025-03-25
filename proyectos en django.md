@@ -12,15 +12,20 @@ https://www.youtube.com/watch?v=gKlsuUhfSpo
 
 # 1 Preparamos nuestro proyecto
 
-1 Tenemos ya listo un proyecto django conectado a postgres en local el cual arrancamos con:
+1 Tenemos listo un proyecto django conectado a postgres en local vinculado al repositorio https://github.com/sociologo/django el cual arrancamos con:
 
 ```
 C:\Users\chris> cd /
 C:\> cd mis_entornos/entorno_3/Scripts
 C:\mis_entornos\entorno_3\Scripts> activate
-(entorno_3) C:\mis_entornos\entorno_3\Scripts> cd \Users\chris\Documentos\GitHub\django\emp3\empleado
-(entorno_3) C:\Users\chris\Documentos\GitHub\django\emp3\empleado> python manage.py runserver
+(entorno_3) C:\mis_entornos\entorno_3\Scripts> cd \GitHub\django\emp3\empleado
+(entorno_3) C:\GitHub\django\emp3\empleado> python manage.py runserver
 ```
+
+
+
+
+
 
 2 Instalamos Gunicorn
 
