@@ -182,6 +182,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 ![image](https://github.com/user-attachments/assets/a27a7c66-8c27-4794-984d-2bef2bc51c6c)
 
+5 Configuramos la variable de entorno que es la secret key sin comillas:
+
+
+
 
 <br>
 <br>
