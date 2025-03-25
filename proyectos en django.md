@@ -166,10 +166,25 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 </p>
 
 2 Conectamos a GitHub y seleccionamos **autodeploy** para que cada cambio en el repositorio se actualice automaticamente en el servidor, 
-renombramos al aplicacion, seleccionamos los recursos mas baratos
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/aa49f7d8-3234-4e96-9912-8e211a5238e8" alt="image" width="60%">
+</p>
+
+3 Renombramos al aplicación y seleccionamos los recursos mas baratos
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b02f584c-8acb-41fc-b016-51b2c8ea00b0" alt="image" width="60%">
+</p>
 
 
-3 Modificamos el run command
+
+
+
+
+
+
+4 Modificamos el run command
 
 <br>
 <br>
