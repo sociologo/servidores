@@ -38,6 +38,16 @@ Llevamos nuestro proyecto a un nuevo repositorio y lo abrimos desde la carpeta v
   <img src="https://github.com/user-attachments/assets/802bfe61-0a42-40e4-9095-1ced14c2279b" alt="image" width="60%">
 </p>
 
+```bash
+C:\Users\chris> cd /
+C:\> cd mis_entornos/entorno_3/Scripts
+C:\mis_entornos\entorno_3\Scripts> activate
+(entorno_3) C:\mis_entornos\entorno_3\Scripts> cd \GitHub\emp3\empleado
+(entorno_3) C:\GitHub\emp3\empleado>python manage.py runserver
+```
+
+
+
 
 
 2 Instalamos Gunicorn
