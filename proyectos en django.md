@@ -178,13 +178,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 </p>
 
 
+4 Observemos el Run Command que se carga en forma automatica:
 
+![image](https://github.com/user-attachments/assets/a27a7c66-8c27-4794-984d-2bef2bc51c6c)
 
-
-
-
-
-4 Modificamos el run command
 
 <br>
 <br>
