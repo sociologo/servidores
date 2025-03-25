@@ -18,8 +18,8 @@ https://www.youtube.com/watch?v=gKlsuUhfSpo
 C:\Users\chris> cd /
 C:\> cd mis_entornos/entorno_3/Scripts
 C:\mis_entornos\entorno_3\Scripts> activate
-(entorno_3) C:\mis_proyectos\emp3\empleado>cd \Users\chris\Documentos\GitHub\django\emp3\empleado
-(entorno_3) C:\Users\chris\Documentos\GitHub\django\emp3\empleado>python manage.py runserver
+(entorno_3) C:\mis_entornos\entorno_3\Scripts> cd \Users\chris\Documentos\GitHub\django\emp3\empleado
+(entorno_3) C:\Users\chris\Documentos\GitHub\django\emp3\empleado> python manage.py runserver
 ```
 
 2 Instalamos Gunicorn
