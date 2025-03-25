@@ -10,7 +10,7 @@ https://www.youtube.com/watch?v=gKlsuUhfSpo
 * [1 La vista ListView](#1-La-vista-ListView)
   * [a Listar todos los empleados](#a-Listar-todos-los-empleados)
 
-# 1 Nuestro proyecto original
+# 1 Editando nuestro proyecto original
 
 1 Tenemos listo el proyecto django **emp3** conectado a postgres en local vinculado al repositorio https://github.com/sociologo/django que arrancamos con:
 
@@ -29,7 +29,7 @@ C:\mis_entornos\entorno_3\Scripts> activate
   <img src="https://github.com/user-attachments/assets/5cfed8aa-2168-4a66-8c62-07fad3823aeb" alt="image" width="60%">
 </p>
 
-# Copia del proyecto en un nuevo repositorio
+1 Copia del proyecto en un nuevo repositorio
 
 Llevamos nuestro proyecto a un nuevo repositorio y lo abrimos desde la carpeta vinculada a él en local.
 
@@ -168,7 +168,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 ```
 
 
-#2 Configuramos DigitalOcean
+# 2 Configuramos DigitalOcean
 
 En nuestro proyecto debemos agregar un archivo sin extension llamado Procfile a la altura del **manage.py**
 
