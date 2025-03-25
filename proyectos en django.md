@@ -14,10 +14,17 @@ https://www.youtube.com/watch?v=gKlsuUhfSpo
 
 1 Tenemos listo el proyecto django **emp3** conectado a postgres en local vinculado al repositorio https://github.com/sociologo/django. 
 
+<br>
+<br>
+<br>
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5cfed8aa-2168-4a66-8c62-07fad3823aeb" alt="image" width="60%">
 </p>
 
+<br>
+<br>
+<br>
 
 
 
