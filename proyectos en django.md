@@ -231,6 +231,11 @@ Y llegamos a
   <img src="https://github.com/user-attachments/assets/71b6e627-edf2-41a5-bc20-5cd672c4daea" alt="image" width="60%">
 </p>
 
+y nos queda:
+
+![image](https://github.com/user-attachments/assets/f74e5364-3bca-41d9-9d48-b62ad6797321)
+![image](https://github.com/user-attachments/assets/42150751-39e8-4b47-adc5-82782e10b26d)
+
 
 
 
