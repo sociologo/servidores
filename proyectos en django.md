@@ -12,6 +12,8 @@ https://www.digitalocean.com/community/tutorials/how-to-deploy-django-to-app-pla
 
 * [1 Preparando el proyecto](#1-Preparando-el-proyecto)
   * [11 Nuestro proyecto en local](#11-Nuestro-proyecto-en-local)
+* [3 Configuración en DigitalOcean](#3-Configuración-en-DigitalOcean)
+
 
 # 1 Preparando el proyecto
 
@@ -58,7 +60,9 @@ C:\mis_entornos\entorno_3\Scripts> activate
 
 # 2 Configurando el proyecto
 
-1 Instalamos Gunicorn
+21 Instalamos Gunicorn
+
+Es necesario para incluir Gunicorn dentro del archivo requirements.txt
 
 Lo hacemos para asegurarnos de que nuestra aplicacion Django sea capaz de comunicarse con los servidores que trabajan tras bambalinas en DigitalOcean.
 
@@ -68,52 +72,27 @@ Requirement already satisfied: gunicorn in c:\mis_entornos\entorno_3\lib\site-pa
 Requirement already satisfied: packaging in c:\mis_entornos\entorno_3\lib\site-packages (from gunicorn) (24.2)
 ```
 
-2 En nuestra aplicación creamos un archivo requirements.txt
+22 En nuestra aplicación creamos un archivo requirements.txt
 
-Lo hacemos para tener el registro de todos nuestros paquetes.
+Es necesario incluir un archivo requirements.txt en tu proyecto Django antes de subirlo a DigitalOcean App Platform. Este archivo le indica a la plataforma qué dependencias necesita instalar para ejecutar tu proyecto.
 
 ```
-(entorno_3) C:\GitHub\emp3\empleado> pip freeze > requirements.txt
+(entorno_3) C:\GitHub\emp3\emp3\empleado>pip freeze > requirements.txt
 ```
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/30d77c72-013e-4f00-b039-aa4721de9869" alt="image" width="60%">
-</p>
+![image](https://github.com/user-attachments/assets/5e7955ca-2920-46ef-838f-4156cf5d5bb5)
 
-4 Preparamos nuestros archivos estaticos.
+23 Preparamos nuestros archivos estaticos.
 
 Para ello vamos al archivo **local.py** de **settings**
 
-El original es:
-```
-from .base import *
-
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbempleado101',
-        'USER': 'chris101',
-        'PASSWORD': 'nueva123456',
-        'HOST': 'localhost',
-        'PORT': '5432'
-    }
-}
-
-STATIC_URL = 'static/'
-
-STATICFILES_DIRS = [
-   BASE_DIR / "static",
-]
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
-```
-
 debemos agregar STATIC_ROOT importando os, cambiar DEBUG a False y agregar un ALLOWED_HOST '*'
+
+STATIC_URL: Define el prefijo de URL para acceder a tus archivos estáticos.
+
+STATIC_ROOT: Es el directorio donde Django recopila todos los archivos estáticos al ejecutar collectstatic. **Definirlo es esencial para entornos de producción**.
+
+STATICFILES_DIRS: Especifica directorios adicionales para tus archivos estáticos durante el desarrollo. 
 
 `STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')` define que todos los archivos estáticos se recopilarán y almacenarán en la carpeta staticfiles ubicada dentro del directorio raíz del proyecto. Es útil para manejar archivos estáticos en producción, cuando necesitas tenerlos organizados y listos para ser servidos por el servidor web.
 
@@ -137,9 +116,9 @@ DATABASES = {
     }
 }
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 STATICFILES_DIRS = [
    BASE_DIR / "static",
@@ -149,13 +128,13 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 ```
 
-5 SECRET_KEY
+24 SECRET_KEY
 
-Debemos sacar el valor en duro de SECRET_KEY de nuestro proyecto para poder clonarlo en el servidor de DigitalOcean, valor que vamos a ingresar como variable de entorno en nuestro servidor.
+Debemos sacar el valor en duro de SECRET_KEY, valor que vamos a ingresar como variable de entorno en nuestro servidor.
 
 Vamos a nuestro archivo **base.py** de **settings**
 
-Copiemos SECRET_KEY y la guardamos y hacemos el siguiente reemplazo en el archivo **base.py**:
+en **base.py** copiemos SECRET_KEY y la guardamos y hacemos el siguiente reemplazo en el archivo **base.py**:
 
 SECRET_KEY = 'django-insecure-9xh%=ob5sj*g*r5&ii^r$mu9bs0w*t09ni*vko67=*z402som8'
 
@@ -169,7 +148,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # some code
 ```
 
-# 2 Configuramos DigitalOcean
+# 3 Configuración en DigitalOcean
 
 1 Vamos a la pagina `https://cloud.digitalocean.com/apps`
 
