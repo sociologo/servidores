@@ -128,6 +128,18 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 ```
 
+Ejecuta el comando collectstatic
+
+Antes de desplegar la aplicación, asegúrate de ejecutar este comando en tu entorno local para recopilar los archivos estáticos:
+
+```bash
+python manage.py collectstatic --no-input
+```
+
+Este comando moverá todos los archivos estáticos al directorio definido en STATIC_ROOT.
+
+Actualiza tu repositorio en GitHub
+
 24 SECRET_KEY
 
 Debemos sacar el valor en duro de SECRET_KEY, valor que vamos a ingresar como variable de entorno en nuestro servidor.
@@ -180,6 +192,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c17e1956-20cf-42c3-9668-1559b86ccb87" alt="image" width="60%">
 </p>
+
+Configuramos como variable de entorno el archivo desde el cual queremos que arranque la aplicacion.
+
+DJANGO_SETTINGS_MODULE=empleado.settings.production
+
 
 37 Le damos un nombre a la app y cramos la aplicacion
 
