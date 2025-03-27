@@ -165,26 +165,31 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 </p>
 
 
-3 Renombramos al aplicación y seleccionamos los recursos mas baratos
+34 Renombramos al aplicación y seleccionamos los recursos mas baratos
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ef720672-ef3a-4a14-9789-d215b411879b" alt="image" width="60%">
 </p>
 
-4 Observemos el Run Command que se carga en forma automatica:
+35 Observemos el Run Command que se carga en forma automatica:
 
 ![image](https://github.com/user-attachments/assets/3354cc89-ef8d-441f-9194-00c630503d82)
 
-5 Configuramos la variable de entorno que es la secret key sin comillas y la encriptamos:
+36 Configuramos la variable de entorno que es la secret key sin comillas y la encriptamos:
 
-![image](https://github.com/user-attachments/assets/db3569d5-2073-4c4b-acab-e8c549306f2b)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c17e1956-20cf-42c3-9668-1559b86ccb87" alt="image" width="60%">
+</p>
+
+37 Le damos un nombre a la app y cramos la aplicacion
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ce891684-f698-4fec-a833-d9a7652c075f" alt="image" width="60%">
+</p>
 
 
 
 
-6 Le damos un nombre a la app y cramos la aplicacion
-
-![image](https://github.com/user-attachments/assets/ce891684-f698-4fec-a833-d9a7652c075f)
 
 ***
 ***
@@ -192,6 +197,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 <br>
 <br>
 <br>
+
+aca voy
+
 <br>
 <br>
 <br>
