@@ -187,13 +187,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 ![image](https://github.com/user-attachments/assets/3354cc89-ef8d-441f-9194-00c630503d82)
 
-36 Configuramos la variable de entorno que es la secret key sin comillas y la encriptamos:
+36 Configuramos como variables de entorno Secret Key sin comillas y la encriptamos   el archivo desde el cual queremos que arranque la aplicación:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/01979dc2-a32e-4218-be52-da535952891c" alt="image" width="60%">
 </p>
-
-Configuramos como variable de entorno el archivo desde el cual queremos que arranque la aplicacion.
 
 `DJANGO_SETTINGS_MODULE = empleado.settings.local`
 
