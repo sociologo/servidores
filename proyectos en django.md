@@ -224,6 +224,7 @@ Y llegamos a
 
 4 Debemos establecer como directorio de salida `staticfiles` y como ruta requerida http `/static` y le damos a `Add resources`
 
+![image](https://github.com/user-attachments/assets/71b6e627-edf2-41a5-bc20-5cd672c4daea)
 ![Uploading image.png…]()
 
 
