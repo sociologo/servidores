@@ -195,7 +195,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 Configuramos como variable de entorno el archivo desde el cual queremos que arranque la aplicacion.
 
-DJANGO_SETTINGS_MODULE=empleado.settings.production
+DJANGO_SETTINGS_MODULE=empleado.settings.local
 
 
 37 Le damos un nombre a la app y cramos la aplicacion
