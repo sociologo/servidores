@@ -195,7 +195,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 `DJANGO_SETTINGS_MODULE = empleado.settings.local`
 
-37 Le damos un nombre a la app y cramos la aplicacion
+37 Le damos un nombre a la app y creamos la aplicacion con `Create App`
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ce891684-f698-4fec-a833-d9a7652c075f" alt="image" width="60%">
