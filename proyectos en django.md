@@ -150,28 +150,37 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # 3 Configuración en DigitalOcean
 
-1 Vamos a la pagina `https://cloud.digitalocean.com/apps`
+31 Vamos a la pagina `https://cloud.digitalocean.com/apps`
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7d4ffa5a-f6dd-4c1e-a6c3-0690666a3094" alt="image" width="60%">
 </p>
 
-2 Conectamos a GitHub y seleccionamos **autodeploy** para que cada cambio en el repositorio se actualice automaticamente en el servidor, 
+32 Damos click a Create App con el proveedor de la fuente GitHub
+
+33 Conectamos a GitHub y seleccionamos **autodeploy** para que cada cambio en el repositorio se actualice automaticamente en el servidor, 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/aa49f7d8-3234-4e96-9912-8e211a5238e8" alt="image" width="60%">
+  <img src="https://github.com/user-attachments/assets/a4f4417d-2c3e-4944-9825-aef3fc98f9d6" alt="image" width="60%">
 </p>
+
 
 3 Renombramos al aplicación y seleccionamos los recursos mas baratos
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b02f584c-8acb-41fc-b016-51b2c8ea00b0" alt="image" width="60%">
+  <img src="https://github.com/user-attachments/assets/ef720672-ef3a-4a14-9789-d215b411879b" alt="image" width="60%">
 </p>
-
 
 4 Observemos el Run Command que se carga en forma automatica:
 
-![image](https://github.com/user-attachments/assets/a27a7c66-8c27-4794-984d-2bef2bc51c6c)
+![image](https://github.com/user-attachments/assets/3354cc89-ef8d-441f-9194-00c630503d82)
+
+
+
+
+
+
+
 
 5 Configuramos la variable de entorno que es la secret key sin comillas y la encriptamos:
 
