@@ -183,7 +183,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
   <img src="https://github.com/user-attachments/assets/ef720672-ef3a-4a14-9789-d215b411879b" alt="image" width="60%">
 </p>
 
-35 Observemos el Run Command que se carga en forma automatica:
+35 Observemos el Run Command que se carga en forma automática:
 
 ![image](https://github.com/user-attachments/assets/3354cc89-ef8d-441f-9194-00c630503d82)
 
