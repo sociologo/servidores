@@ -32,10 +32,7 @@ C:\mis_entornos\entorno_3\Scripts> activate
   <img src="https://github.com/user-attachments/assets/5cfed8aa-2168-4a66-8c62-07fad3823aeb" alt="image" width="60%">
 </p>
 
-1 Copia del proyecto en un nuevo repositorio
-
-Llevamos nuestro proyecto a un nuevo repositorio y lo abrimos desde la carpeta vinculada a él en local.
-
+1 Copiamos el proyecto en un nuevo repositorio y lo ejecutamos desde la carpeta vinculada a él en local.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/802bfe61-0a42-40e4-9095-1ced14c2279b" alt="image" width="60%">
