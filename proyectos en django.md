@@ -34,12 +34,13 @@ C:\mis_entornos\entorno_3\Scripts> activate
 
 2 Creamos el repositorio **emp3** en GitHub y los clonamos en la carpeta local **emp3** localizada en `GitHub/`
 
-1 Abrimos Git Bash Here en la carpeta
-2 git clone https://github.com/sociologo/emp3.git
+1 Ejecutamos `Open Git Bash Here` en la carpeta **GitHub**
+
+2 Ejecutamos `git clone https://github.com/sociologo/emp3.git`
 
 ![image](https://github.com/user-attachments/assets/35b683ac-44ef-413a-b969-54ff4b9836b6)
 
-3 Copiamos el proyecto en un nuevo repositorio y lo ejecutamos desde la carpeta vinculada a él en local.
+3 Copiamos el proyecto en un nuevo repositorio local, lo subimos a GitHub y lo ejecutamos desde la carpeta  local para cerciorarnos de que el proyecto ejecute correctamente.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/802bfe61-0a42-40e4-9095-1ced14c2279b" alt="image" width="60%">
@@ -49,7 +50,7 @@ C:\mis_entornos\entorno_3\Scripts> activate
 C:\Users\chris> cd /
 C:\> cd mis_entornos/entorno_3/Scripts
 C:\mis_entornos\entorno_3\Scripts> activate
-(entorno_3) C:\mis_entornos\entorno_3\Scripts> cd \GitHub\emp3\empleado
+(entorno_3) C:\mis_entornos\entorno_3\Scripts> cd \GitHub\emp3\emp3\empleado
 (entorno_3) C:\GitHub\emp3\empleado>python manage.py runserver
 ```
 
