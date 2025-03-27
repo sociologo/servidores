@@ -15,7 +15,7 @@ https://www.digitalocean.com/community/tutorials/how-to-deploy-django-to-app-pla
 
 # 1 Subiendo un proyecto a GitHub
 
-1 Tenemos un proyecto django listo llamado **emp3** conectado a postgres en local en `C:\GitHub\django\emp3\empleado` vinculado al repositorio https://github.com/sociologo/django que arrancamos con:
+1 Tenemos un proyecto django listo llamado **empleado** conectado a postgres en local en `C:\GitHub\django\emp3\empleado` vinculado al repositorio https://github.com/sociologo/django que arrancamos con:
 
 ```bash
 C:\Users\chris> cd /
