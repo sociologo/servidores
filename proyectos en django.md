@@ -32,7 +32,14 @@ C:\mis_entornos\entorno_3\Scripts> activate
   <img src="https://github.com/user-attachments/assets/5cfed8aa-2168-4a66-8c62-07fad3823aeb" alt="image" width="60%">
 </p>
 
-1 Copiamos el proyecto en un nuevo repositorio y lo ejecutamos desde la carpeta vinculada a él en local.
+2 Creamos el repositorio **emp3** en GitHub y los clonamos en la carpeta local **emp3** localizada en `GitHub/`
+
+1 Abrimos Git Bash Here en la carpeta
+2 git clone https://github.com/sociologo/emp3.git
+
+![image](https://github.com/user-attachments/assets/35b683ac-44ef-413a-b969-54ff4b9836b6)
+
+3 Copiamos el proyecto en un nuevo repositorio y lo ejecutamos desde la carpeta vinculada a él en local.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/802bfe61-0a42-40e4-9095-1ced14c2279b" alt="image" width="60%">
