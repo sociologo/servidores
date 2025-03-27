@@ -13,6 +13,9 @@ https://www.digitalocean.com/community/tutorials/how-to-deploy-django-to-app-pla
 * [1 Preparando el proyecto](#1-Preparando-el-proyecto)
   * [11 Nuestro proyecto en local](#11-Nuestro-proyecto-en-local)
 * [3 Configuración en DigitalOcean](#3-Configuración-en-DigitalOcean)
+* [4 Cargando los archivos estáticos](#4-Cargando-los-archivos-estáticos)
+
+
 
 
 # 1 Preparando el proyecto
@@ -201,13 +204,27 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
   <img src="https://github.com/user-attachments/assets/ce891684-f698-4fec-a833-d9a7652c075f" alt="image" width="60%">
 </p>
 
-# Y llegamos a 
+Y llegamos a 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8a6b6edb-6edf-44f4-8c8c-ada510de02be" alt="image" width="60%">
 </p>
 
+# 4 Cargando los archivos estáticos
 
+1 Agregamos un recurso desde el código fuente
+
+![image](https://github.com/user-attachments/assets/62b1258f-7e45-4d84-b078-6f9b43eec357)
+
+2 Apuntamos al mismo repositorio con autorun y le damos a `Next`
+
+3 Le cambiamos nombre y lo definimos como un recurso del tipo sitio estático:
+
+![image](https://github.com/user-attachments/assets/12ed65e4-afa2-484c-afae-f840fe110433)
+
+4 Debemos establecer como directorio de salida `staticfiles` y como ruta requerida http `/static` y le damos a `Add resources`
+
+![Uploading image.png…]()
 
 
 ***
