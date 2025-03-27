@@ -213,19 +213,25 @@ Y llegamos a
 # 4 Cargando los archivos estáticos
 
 1 Agregamos un recurso desde el código fuente
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/62b1258f-7e45-4d84-b078-6f9b43eec357" alt="image" width="60%">
+</p>
 
-![image](https://github.com/user-attachments/assets/62b1258f-7e45-4d84-b078-6f9b43eec357)
 
 2 Apuntamos al mismo repositorio con autorun y le damos a `Next`
 
 3 Le cambiamos nombre y lo definimos como un recurso del tipo sitio estático:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/12ed65e4-afa2-484c-afae-f840fe110433" alt="image" width="60%">
+</p>
 
-![image](https://github.com/user-attachments/assets/12ed65e4-afa2-484c-afae-f840fe110433)
 
 4 Debemos establecer como directorio de salida `staticfiles` y como ruta requerida http `/static` y le damos a `Add resources`
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/71b6e627-edf2-41a5-bc20-5cd672c4daea" alt="image" width="60%">
+</p>
 
-![image](https://github.com/user-attachments/assets/71b6e627-edf2-41a5-bc20-5cd672c4daea)
-![Uploading image.png…]()
+
 
 
 ***
