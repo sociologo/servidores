@@ -204,6 +204,11 @@ Configuramos como variable de entorno el archivo desde el cual queremos que arra
   <img src="https://github.com/user-attachments/assets/ce891684-f698-4fec-a833-d9a7652c075f" alt="image" width="60%">
 </p>
 
+# Y llegamos a 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8a6b6edb-6edf-44f4-8c8c-ada510de02be" alt="image" width="60%">
+</p>
 
 
 
@@ -223,113 +228,6 @@ aca voy
 <br>
 ***
 ***
-
-
-
-
-
-
-
-
-En nuestro proyecto debemos agregar un archivo sin extension llamado Procfile a la altura del **manage.py**
-
-```
-C:\Users\chris\Documentos\GitHub\emp3\empleado>echo web: gunicorn empleado.wsgi > Procfile
-```
-
-![image](https://github.com/user-attachments/assets/0501f68d-8b8a-479f-a311-28224b613bb2)
-
-
-Vamos a https://cloud.digitalocean.com/apps
-
-Donde iremos a App platform y no a droplet
-
-![image](https://github.com/user-attachments/assets/9e4f2efa-c840-4261-a7c5-99401295d09d)
-
-
-Vamos a crear app y conectamos nuestro repositorio Github
-
-Resulta clave indicar la ruta en la estructura del directorio:
-
-![image](https://github.com/user-attachments/assets/8397e822-0638-4beb-a49e-43256e209b4e)
-
-![image](https://github.com/user-attachments/assets/89a821f3-4662-49b8-a367-cbcc49aa74b0)
-
-Y asi se ve:
-
-![image](https://github.com/user-attachments/assets/763bf478-1111-458c-bea8-aaa1daeece4b)
-
-![image](https://github.com/user-attachments/assets/6078a862-d0e5-4e27-b847-2232eb3d4f55)
-
-Configuramos las variables de entorno que es la secret key sin comillas:
-
-![image](https://github.com/user-attachments/assets/23eb1197-1068-4dae-a57c-3e79f3221ede)
-
-![image](https://github.com/user-attachments/assets/74351d19-6c3a-4191-ba72-c4156e1aa482)
-
-
-# 4 Configuramos los archivos estaticos
-
-# 5 Construimos una base de datos
-
-Constuimos una base de datos en postgres.
-
-Copiamos la cadena de conexion y la asociamos a una variable de entorno que configuramos en Actions Manage env vars de la app en DigitalOcean
-
-
-DATABASE_URL = postgresql://doadmin:show-password@db-postgresql-sfo3-81712-do-user-18172787-0.m.db.ondigitalocean.com:25060/defaultdb?sslmode=require
-
-![image](https://github.com/user-attachments/assets/c0bca814-1e4a-4658-bb96-44fecea3ef50)
-
-![image](https://github.com/user-attachments/assets/56ba4ab8-925f-4e97-b7fa-948542e69c05)
-
-Establecemos los correctos parametros en la configuracion de nuestra base de datos postgres
-```
-import os
-from .base import *
-
-DEBUG = False
-ALLOWED_HOSTS = ['*']
-
-from urllib.parse import urlparse
-DATABASE_URL = os.environ.get('DATABASE_URL')
-db_info = urlparse(DATABASE_URL)
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'defaultdb',
-        'USER': db_info.username,
-        'PASSWORD': db_info.password,
-        'HOST': db_info.hostname,
-        'PORT': db_info.port,
-        'OPTIONS': {'sslmode': 'require'},
-    }
-}
-
-STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [
-   BASE_DIR / "static",
-]
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
-```
-
-
-Es fundamental establecer correctamente las variables de entorno incluyendo DJANGO_SETTING_MODULE 
-
-![image](https://github.com/user-attachments/assets/7addac5c-a8ac-427a-aee1-814b94f408c3)
-
-
-
-
-
-
-
-## a Listar todos los empleados
-
 
 
 
