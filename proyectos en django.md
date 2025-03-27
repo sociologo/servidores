@@ -10,12 +10,14 @@ https://www.digitalocean.com/community/tutorials/how-to-deploy-django-to-app-pla
 
 # Índice
 
-* [1 La vista ListView](#1-La-vista-ListView)
-  * [a Listar todos los empleados](#a-Listar-todos-los-empleados)
+* [1 Preparando el proyecto](#1-Preparando-el-proyecto)
+  * [11 Nuestro proyecto en local](#11-Nuestro-proyecto-en-local)
 
 # 1 Preparando el proyecto
 
-1 Tenemos un proyecto django listo llamado **empleado** conectado a postgres en local en `C:\GitHub\django\emp3\empleado` vinculado al repositorio https://github.com/sociologo/django que arrancamos con:
+## 11 Nuestro proyecto en local
+
+Tenemos un proyecto django listo llamado **empleado** conectado a postgres en local en `C:\GitHub\django\emp3\empleado` que arrancamos con:
 
 ```bash
 C:\Users\chris> cd /
@@ -32,7 +34,7 @@ C:\mis_entornos\entorno_3\Scripts> activate
   <img src="https://github.com/user-attachments/assets/5cfed8aa-2168-4a66-8c62-07fad3823aeb" alt="image" width="60%">
 </p>
 
-2 Creamos el repositorio **emp3** en GitHub y los clonamos en la carpeta local **emp3** localizada en `GitHub/`
+2 Creamos un nuevo repositorio **emp3** en GitHub y los clonamos en la carpeta local **emp3** localizada en `GitHub/`
 
 1 Ejecutamos `Open Git Bash Here` en la carpeta **GitHub**
 
@@ -54,7 +56,9 @@ C:\mis_entornos\entorno_3\Scripts> activate
 (entorno_3) C:\GitHub\emp3\empleado>python manage.py runserver
 ```
 
-2 Instalamos Gunicorn
+# 2 Configurando el proyecto
+
+1 Instalamos Gunicorn
 
 Lo hacemos para asegurarnos de que nuestra aplicacion Django sea capaz de comunicarse con los servidores que trabajan tras bambalinas en DigitalOcean.
 
