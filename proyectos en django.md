@@ -53,7 +53,7 @@ C:\Users\chris> cd /
 C:\> cd mis_entornos/entorno_3/Scripts
 C:\mis_entornos\entorno_3\Scripts> activate
 (entorno_3) C:\mis_entornos\entorno_3\Scripts> cd \GitHub\emp3\emp3\empleado
-(entorno_3) C:\GitHub\emp3\empleado>python manage.py runserver
+(entorno_3) C:\GitHub\emp3\empleado> python manage.py runserver
 ```
 
 # 2 Configurando el proyecto
@@ -63,12 +63,12 @@ C:\mis_entornos\entorno_3\Scripts> activate
 Lo hacemos para asegurarnos de que nuestra aplicacion Django sea capaz de comunicarse con los servidores que trabajan tras bambalinas en DigitalOcean.
 
 ```
-(entorno_3) C:\GitHub\emp3\empleado>pip install gunicorn
+(entorno_3) C:\GitHub\emp3\emp3\empleado>pip install gunicorn
 Requirement already satisfied: gunicorn in c:\mis_entornos\entorno_3\lib\site-packages (23.0.0)
 Requirement already satisfied: packaging in c:\mis_entornos\entorno_3\lib\site-packages (from gunicorn) (24.2)
 ```
 
-3 En nuestra aplicación creamos un archivo requirements.txt
+2 En nuestra aplicación creamos un archivo requirements.txt
 
 Lo hacemos para tener el registro de todos nuestros paquetes.
 
