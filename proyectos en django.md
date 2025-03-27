@@ -162,7 +162,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # 3 Configuración en DigitalOcean
 
-31 Vamos a la pagina `https://cloud.digitalocean.com/apps`
+31 Vamos a la página `https://cloud.digitalocean.com/apps`
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7d4ffa5a-f6dd-4c1e-a6c3-0690666a3094" alt="image" width="60%">
