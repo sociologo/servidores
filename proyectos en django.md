@@ -170,7 +170,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 32 Damos click a Create App con proveedor de código fuente GitHub
 
-33 Conectamos a GitHub y seleccionamos **autodeploy** para que cada cambio en el repositorio se actualice automaticamente en el servidor, 
+33 Conectamos con el repositorio GitHub y seleccionamos **autodeploy** para que cada cambio en el repositorio se actualice automáticamente en el servidor
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a4f4417d-2c3e-4944-9825-aef3fc98f9d6" alt="image" width="60%">
