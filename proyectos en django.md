@@ -1,4 +1,4 @@
-# Implementar una aplicación Django en Digital Ocean
+# Implementar una aplicación Django en Digital Ocean como APP
 
 ***
 ***
