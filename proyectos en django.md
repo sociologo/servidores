@@ -303,7 +303,6 @@ DATABASES = {
     }
 }
 
-
 STATIC_URL = 'static/'
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
@@ -316,7 +315,15 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 ```
 
+55 Actualizamos nuestro proyecto en GitHub.
+
 logre la coneccion. lo que debo hacer ahora es en la consola de digital ocean un make migrate
+
+56 En la consola de DigitalOcean hacemos las migraciones y
+
+python manage.py migrate
+
+ya está.
 
 
 
