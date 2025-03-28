@@ -198,13 +198,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 ![image](https://github.com/user-attachments/assets/3354cc89-ef8d-441f-9194-00c630503d82)
 
-- Configuramos como variables de entorno Secret Key sin comillas y la encriptamos el archivo desde el cual queremos que arranque la aplicación:
+- Configuramos como variables de entorno Secret Key sin comillas y la encriptamos. Hacemos lo mismo con el archivo desde el cual queremos que arranque la aplicación sin encriptar `DJANGO_SETTINGS_MODULE = empleado.settings.local`.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d4739be0-411a-4b5f-8bbc-38ff7013f8b5" alt="image" width="60%">
 </p>
-
-`DJANGO_SETTINGS_MODULE = empleado.settings.local`
 
 - Le damos un nombre a la app y creamos la aplicacion con `Create App`
 
