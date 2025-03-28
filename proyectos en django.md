@@ -8,6 +8,11 @@ https://www.youtube.com/watch?v=gKlsuUhfSpo
 How To Deploy a Django App on App Platform\
 https://www.digitalocean.com/community/tutorials/how-to-deploy-django-to-app-platform
 
+Conocimientos previos:
+
+1 Entornos virtuales en Django\
+2 Git y GitHub
+
 # Índice
 
 * [1 Preparando el proyecto](#1-Preparando-el-proyecto)
