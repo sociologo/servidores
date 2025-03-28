@@ -11,7 +11,7 @@ https://www.digitalocean.com/community/tutorials/how-to-deploy-django-to-app-pla
 # Índice
 
 * [1 Preparando el proyecto](#1-Preparando-el-proyecto)
-  * [1.1 Nuestro proyecto en local](#1.1-Nuestro-proyecto-en-local)
+  * [1.1 Nuestro proyecto en local](#11-Nuestro-proyecto-en-local)
 * [2 Configurando el proyecto](#2-Configurando-el-proyecto)
 * [3 Configuración en DigitalOcean](#3-Configuración-en-DigitalOcean)
 * [4 Cargando los archivos estáticos](#4-Cargando-los-archivos-estáticos)
