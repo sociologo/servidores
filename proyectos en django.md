@@ -20,7 +20,7 @@ Conocimientos previos necesarios:
   * [1.2 Subiendo una copia del proyecto a GitHub](#12-Subiendo-una-copia-del-proyecto-a-GitHub)
 * [2 Configurando el proyecto](#2-Configurando-el-proyecto)
   * [2.1 Instalando Gunicorn](#21-Instalando-Gunicorn)
-  * [2.2 El archivo requirements.txt](#22-El-archivo-requirements`.`txt)
+  * [2.2 El archivo requirements.txt](#22-El-archivo-requirementstxt)
   * [2.3 Preparamos nuestros archivos estáticos](#23-Preparamos-nuestros-archivos-estáticos)
   * [2.4 Ejecutamos el comando collectstatic](#24-Ejecutamos-el-comando-collectstatic)
   * [2.5 SECRET_KEY](#25-SECRET_KEY)
