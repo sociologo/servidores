@@ -57,8 +57,10 @@ Creamos un nuevo repositorio **emp3** en GitHub y los clonamos en una carpeta lo
 
 ![image](https://github.com/user-attachments/assets/d8137d7e-01de-4f72-a1ff-3ca31169d509)
 
+Copiamos el proyecto en el nuevo repositorio local, lo subimos a GitHub y lo ejecutamos desde la carpeta local para cerciorarnos de que el proyecto ejecute correctamente.
 
-3 Copiamos el proyecto en un nuevo repositorio local, lo subimos a GitHub y lo ejecutamos desde la carpeta  local para cerciorarnos de que el proyecto ejecute correctamente.
+![image](https://github.com/user-attachments/assets/d92704fa-0b7b-4c58-a58c-6b43697824e9)
+
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/802bfe61-0a42-40e4-9095-1ced14c2279b" alt="image" width="60%">
