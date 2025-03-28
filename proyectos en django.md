@@ -255,6 +255,9 @@ aca voy
 ***
 ***
 
+logre la coneccion. lo que debo hacer ahora es en la consola de digital ocean un make migrate
+
+![image](https://github.com/user-attachments/assets/b1a6e26d-508a-4c1d-9e65-aa1c2b53a5f7)
 
 
 
