@@ -80,42 +80,39 @@ C:\mis_entornos\entorno_3\Scripts> activate
 
 ## 2.1 Instalando Gunicorn
 
-Es necesario para incluir Gunicorn dentro del archivo requirements.txt para asegurarnos de que nuestra aplicación Django sea capaz de comunicarse con los servidores que trabajan tras bambalinas en DigitalOcean.
+1 Es necesario para incluir **Gunicorn** dentro del archivo **requirements.txt** para asegurarnos de que nuestra aplicación Django sea capaz de comunicarse con los servidores que trabajan tras bambalinas en DigitalOcean. Lo instalamos en local:
 
 ```
-(entorno_3) C:\GitHub\emp3\emp3\empleado>pip install gunicorn
+(entorno_3) C:\GitHub\emp3\empleado> pip install gunicorn
 Requirement already satisfied: gunicorn in c:\mis_entornos\entorno_3\lib\site-packages (23.0.0)
 Requirement already satisfied: packaging in c:\mis_entornos\entorno_3\lib\site-packages (from gunicorn) (24.2)
 ```
 
-22 En nuestra aplicación creamos un archivo requirements.txt
+2 En nuestra aplicación creamos un archivo **requirements.txt**
 
-Es necesario incluir un archivo requirements.txt en tu proyecto Django antes de subirlo a DigitalOcean App Platform. Este archivo le indica a la plataforma qué dependencias necesita instalar para ejecutar tu proyecto.
+Es necesario incluir un archivo **requirements.txt** en tu proyecto Django antes de subirlo a DigitalOcean App Platform. Este archivo le indica a la plataforma qué dependencias necesita instalar para ejecutar tu proyecto.
 
 ```
-(entorno_3) C:\GitHub\emp3\emp3\empleado>pip freeze > requirements.txt
+(entorno_3) C:\GitHub\emp3\empleado> pip freeze > requirements.txt
 ```
 
-![image](https://github.com/user-attachments/assets/5e7955ca-2920-46ef-838f-4156cf5d5bb5)
+![image](https://github.com/user-attachments/assets/e785d187-b349-40ba-b7d2-3f1d1117ef38)
 
-23 Preparamos nuestros archivos estaticos.
+3 Preparamos nuestros archivos estáticos.
 
 Para ello vamos al archivo **local.py** de **settings**
 
 debemos agregar STATIC_ROOT importando os, cambiar DEBUG a False y agregar un ALLOWED_HOST '*'
 
-STATIC_URL: Define el prefijo de URL para acceder a tus archivos estáticos.
+- STATIC_URL: Define el prefijo de URL para acceder a tus archivos estáticos.
 
-STATIC_ROOT: Es el directorio donde Django recopila todos los archivos estáticos al ejecutar collectstatic. **Definirlo es esencial para entornos de producción**.
+- STATICFILES_DIRS: Especifica directorios adicionales para tus archivos estáticos durante el desarrollo. 
 
-STATICFILES_DIRS: Especifica directorios adicionales para tus archivos estáticos durante el desarrollo. 
-
-`STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')` define que todos los archivos estáticos se recopilarán y almacenarán en la carpeta staticfiles ubicada dentro del directorio raíz del proyecto. Es útil para manejar archivos estáticos en producción, cuando necesitas tenerlos organizados y listos para ser servidos por el servidor web.
+- `STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')` define que todos los archivos estáticos se recopilarán y almacenarán en la carpeta staticfiles ubicada dentro del directorio raíz del proyecto. Es útil para manejar archivos estáticos en producción, cuando necesitas tenerlos organizados y listos para ser servidos por el servidor web. Es el directorio donde Django recopila todos los archivos estáticos al ejecutar collectstatic. **Definirlo es esencial para entornos de producción**.
 
 
 ```
 import os
-
 from .base import *
 
 DEBUG = False
@@ -132,10 +129,8 @@ DATABASES = {
     }
 }
 
-STATIC_URL = '/static/'
-
+STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
-
 STATICFILES_DIRS = [
    BASE_DIR / "static",
 ]
@@ -144,19 +139,19 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 ```
 
-Ejecuta el comando collectstatic
+4 Ejecutamos el comando **collectstatic**
 
-Antes de desplegar la aplicación, asegúrate de ejecutar este comando en tu entorno local para recopilar los archivos estáticos:
+Antes de desplegar la aplicación, asegúrate de ejecutar este comando en tu entorno local para recopilar los archivos estáticos. Este comando moverá todos los archivos estáticos al directorio definido en STATIC_ROOT.
 
 ```bash
-python manage.py collectstatic --no-input
+(entorno_3) C:\GitHub\emp3\empleado> python manage.py collectstatic --no-input
+
+1397 static files copied to 'C:\GitHub\emp3\empleado\staticfiles'.
 ```
 
-Este comando moverá todos los archivos estáticos al directorio definido en STATIC_ROOT.
+5 Actualiza tu repositorio en GitHub
 
-Actualiza tu repositorio en GitHub
-
-24 SECRET_KEY
+6 SECRET_KEY
 
 Debemos sacar el valor en duro de SECRET_KEY, valor que vamos a ingresar como variable de entorno en nuestro servidor.
 
