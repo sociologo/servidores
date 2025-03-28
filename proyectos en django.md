@@ -44,7 +44,7 @@ C:\mis_entornos\entorno_3\Scripts> activate
 
 ## 1.2 Subiendo una copia del proyecto a GitHub
 
-Creamos un nuevo repositorio **emp3** en GitHub y los clonamos en la carpeta local **emp3** localizada en `GitHub/`
+Creamos un nuevo repositorio **emp3** en GitHub y los clonamos en una carpeta local llamada **emp3** localizada en `GitHub/`
 
 1 Ejecutamos `Open Git Bash Here` en la carpeta **GitHub**
 
