@@ -170,32 +170,35 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # 3 Configuración en DigitalOcean
 
-31 Vamos a la página `https://cloud.digitalocean.com/apps`
+## 3.1 Subir nuestro proyecto a la App Platform
+
+- Vamos a la página `https://cloud.digitalocean.com/apps`
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7d4ffa5a-f6dd-4c1e-a6c3-0690666a3094" alt="image" width="60%">
 </p>
 
-32 Damos click a Create App con proveedor de código fuente GitHub
+- Damos click a Create App con proveedor de código fuente GitHub
 
-33 Conectamos con el repositorio GitHub y seleccionamos **autodeploy** para que cada cambio en el repositorio se actualice automáticamente en el servidor
+- Conectamos con el repositorio GitHub y seleccionamos **autodeploy** para que cada cambio en el repositorio se actualice automáticamente en el servidor
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a4f4417d-2c3e-4944-9825-aef3fc98f9d6" alt="image" width="80%">
+  <img src="https://github.com/user-attachments/assets/bfe6b9f9-89ba-42e5-b810-4041d3dd0d8a" alt="image" width="80%">
 </p>
 
+## 3.2 Configurando nuestro proyecto en la App Platform
 
-34 Renombramos al aplicación y seleccionamos los recursos mas baratos
+- Renombramos al aplicación y seleccionamos los recursos mas baratos
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ef720672-ef3a-4a14-9789-d215b411879b" alt="image" width="60%">
 </p>
 
-35 Observemos el Run Command que se carga en forma automática:
+- Observemos el Run Command que se carga en forma automática:
 
 ![image](https://github.com/user-attachments/assets/3354cc89-ef8d-441f-9194-00c630503d82)
 
-36 Configuramos como variables de entorno Secret Key sin comillas y la encriptamos   el archivo desde el cual queremos que arranque la aplicación:
+- Configuramos como variables de entorno Secret Key sin comillas y la encriptamos el archivo desde el cual queremos que arranque la aplicación:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d4739be0-411a-4b5f-8bbc-38ff7013f8b5" alt="image" width="60%">
@@ -203,7 +206,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 `DJANGO_SETTINGS_MODULE = empleado.settings.local`
 
-37 Le damos un nombre a la app y creamos la aplicacion con `Create App`
+- Le damos un nombre a la app y creamos la aplicacion con `Create App`
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ce891684-f698-4fec-a833-d9a7652c075f" alt="image" width="60%">
