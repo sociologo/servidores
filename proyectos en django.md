@@ -24,7 +24,9 @@ Conocimientos previos necesarios:
   * [2.3 Preparamos nuestros archivos estáticos](#23-Preparamos-nuestros-archivos-estáticos)
   * [2.4 Ejecutamos el comando collectstatic](#24-Ejecutamos-el-comando-collectstatic)
   * [2.5 SECRET_KEY](#25-SECRET_KEY)
-* [3 Configuración en DigitalOcean](#3-Configuración-en-DigitalOcean)
+* [3 Preparando la App Platform](#3-Preparando-la-App-Platform)
+  * [3.1 Subir nuestro proyecto a la App Platform](#31-Subir-nuestro-proyecto-a-la-App-Platform)
+  * [3.2 Configurar el proyecto en la App Platform](#32-Configurar-el-proyecto-en-la-App-Platform)
 * [4 Cargando los archivos estáticos](#4-Cargando-los-archivos-estáticos)
 * [5 Creación de y conexión a la base de datos Postgres](#5-Creación-de-y-conexión-a-la-base-de-datos-Postgres)
 
@@ -168,7 +170,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # some code
 ```
 
-# 3 Configuración en DigitalOcean
+# 3 Preparando la App Platform
 
 ## 3.1 Subir nuestro proyecto a la App Platform
 
@@ -186,7 +188,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
   <img src="https://github.com/user-attachments/assets/bfe6b9f9-89ba-42e5-b810-4041d3dd0d8a" alt="image" width="80%">
 </p>
 
-## 3.2 Configurando nuestro proyecto en la App Platform
+## 3.2 Configurar el proyecto en la App Platform
 
 - Renombramos al aplicación y seleccionamos los recursos más baratos
 
