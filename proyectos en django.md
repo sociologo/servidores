@@ -12,6 +12,7 @@ https://www.digitalocean.com/community/tutorials/how-to-deploy-django-to-app-pla
 
 * [1 Preparando el proyecto](#1-Preparando-el-proyecto)
   * [1.1 Nuestro proyecto en local](#11-Nuestro-proyecto-en-local)
+  * [1.2 Subiendo una copia del proyecto a GitHub](#12-Subiendo-una-copia-del-proyecto-a-GitHub)
 * [2 Configurando el proyecto](#2-Configurando-el-proyecto)
 * [3 Configuración en DigitalOcean](#3-Configuración-en-DigitalOcean)
 * [4 Cargando los archivos estáticos](#4-Cargando-los-archivos-estáticos)
@@ -41,7 +42,9 @@ C:\mis_entornos\entorno_3\Scripts> activate
   <img src="https://github.com/user-attachments/assets/5cfed8aa-2168-4a66-8c62-07fad3823aeb" alt="image" width="60%">
 </p>
 
-2 Creamos un nuevo repositorio **emp3** en GitHub y los clonamos en la carpeta local **emp3** localizada en `GitHub/`
+## 1.2 Subiendo una copia del proyecto a GitHub
+
+Creamos un nuevo repositorio **emp3** en GitHub y los clonamos en la carpeta local **emp3** localizada en `GitHub/`
 
 1 Ejecutamos `Open Git Bash Here` en la carpeta **GitHub**
 
