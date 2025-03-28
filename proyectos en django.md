@@ -237,7 +237,8 @@ Y llegamos a
   <img src="https://github.com/user-attachments/assets/12ed65e4-afa2-484c-afae-f840fe110433" alt="image" width="60%">
 </p>
 
-4 Debemos establecer como directorio de salida `staticfiles` y como ruta requerida http `/static` y le damos a `Add resources`
+4 Establecemos como directorio de salida `staticfiles` y como ruta requerida http `/static`. Le damos a `Add resources`:
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/71b6e627-edf2-41a5-bc20-5cd672c4daea" alt="image" width="60%">
 </p>
