@@ -1,4 +1,4 @@
-leado# Implementar una aplicación Django en Digital Ocean como APP
+# Implementar una aplicación Django en Digital Ocean como APP
 
 ***
 ***
