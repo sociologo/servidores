@@ -250,23 +250,23 @@ y nos queda:
 
 # 5 Creación de y conexión a la base de datos Postgres
 
-51 Agregamos a nuestra aplicación empleado-app una base de datos. DigitalOcean automáticamente nos dirigirá a la creación de una base de datos Postgres:
+1 Agregamos a nuestra aplicación empleado-app una base de datos. DigitalOcean automáticamente nos dirigirá a la creación de una base de datos Postgres:
 
 ![image](https://github.com/user-attachments/assets/f41c3878-e487-404c-8d2c-9790c131fb56)
 
 ![image](https://github.com/user-attachments/assets/f22c274d-3707-407a-8c7a-a6c0e568f2dd)
 
-52 Copiamos el string de conexión
+2 Copiamos el string de conexión
 
 ![image](https://github.com/user-attachments/assets/a63c4e0d-ece7-44cb-b51d-f60fad7f889d)
 
-53 Añadimos el string de conexión como una nueva variable de entorno encriptada de nuestra aplicación:
+3 Añadimos el string de conexión como una nueva variable de entorno encriptada de nuestra aplicación:
 
 ![image](https://github.com/user-attachments/assets/99474450-74cb-4b13-9740-cfc4ee96886c)
 
 ![image](https://github.com/user-attachments/assets/75523dfa-8f87-4b66-8c03-a0386a54adc5)
 
-54 Modificamos el archivo **local.py** de **settings** como se indica:
+4 Modificamos el archivo **local.py** de **settings** como se indica:
 
 ```python
 import os
@@ -306,15 +306,13 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 ```
 
-55 Actualizamos nuestro proyecto en GitHub.
+5 Actualizamos nuestro proyecto en GitHub.
 
-logre la coneccion. lo que debo hacer ahora es en la consola de digital ocean un make migrate
-
-56 En la consola de DigitalOcean hacemos las migraciones para construir la estructura de nuestra base de datos
+6 En la consola de DigitalOcean hacemos las migraciones para construir la estructura de nuestra base de datos
 
 python manage.py migrate
 
-57 En la consola de DigitalOcean creamos un superusuario
+7 En la consola de DigitalOcean creamos un superusuario
 
 python manage.py createsuperuser
 
