@@ -20,11 +20,13 @@ Conocimientos previos necesarios:
   * [1.2 Subiendo una copia del proyecto a GitHub](#12-Subiendo-una-copia-del-proyecto-a-GitHub)
 * [2 Configurando el proyecto](#2-Configurando-el-proyecto)
   * [2.1 Instalando Gunicorn](#21-Instalando-Gunicorn)
+  * [2.2 El archivo requirements.txt](#22-El-archivo-requirements.txt)
+  * [2.3 Preparamos nuestros archivos estáticos](#23-Preparamos-nuestros-archivos-estáticos)
+  * [2.4 Ejecutamos el comando collectstatic](#24-Ejecutamos-el-comando-collectstatic)
+  * [2.5 SECRET_KEY](#25-SECRET_KEY)
 * [3 Configuración en DigitalOcean](#3-Configuración-en-DigitalOcean)
 * [4 Cargando los archivos estáticos](#4-Cargando-los-archivos-estáticos)
 * [5 Creación de y conexión a la base de datos Postgres](#5-Creación-de-y-conexión-a-la-base-de-datos-Postgres)
-
-
 
 
 # 1 Preparando el proyecto
@@ -80,7 +82,7 @@ C:\mis_entornos\entorno_3\Scripts> activate
 
 ## 2.1 Instalando Gunicorn
 
-1 Es necesario para incluir **Gunicorn** dentro del archivo **requirements.txt** para asegurarnos de que nuestra aplicación Django sea capaz de comunicarse con los servidores que trabajan tras bambalinas en DigitalOcean. Lo instalamos en local:
+Es necesario para incluir **Gunicorn** dentro del archivo **requirements.txt** para asegurarnos de que nuestra aplicación Django sea capaz de comunicarse con los servidores que trabajan tras bambalinas en DigitalOcean. Lo instalamos en local:
 
 ```
 (entorno_3) C:\GitHub\emp3\empleado> pip install gunicorn
@@ -88,9 +90,9 @@ Requirement already satisfied: gunicorn in c:\mis_entornos\entorno_3\lib\site-pa
 Requirement already satisfied: packaging in c:\mis_entornos\entorno_3\lib\site-packages (from gunicorn) (24.2)
 ```
 
-2 En nuestra aplicación creamos un archivo **requirements.txt**
+## 2.2 El archivo requirements.txt
 
-Es necesario incluir un archivo **requirements.txt** en tu proyecto Django antes de subirlo a DigitalOcean App Platform. Este archivo le indica a la plataforma qué dependencias necesita instalar para ejecutar tu proyecto.
+Es necesario incluir un archivo **requirements.txt** en tu proyecto Django antes de subirlo a DigitalOcean App Platform. Este archivo le indica a la plataforma qué dependencias necesita instalar para ejecutar el proyecto.
 
 ```
 (entorno_3) C:\GitHub\emp3\empleado> pip freeze > requirements.txt
@@ -98,7 +100,7 @@ Es necesario incluir un archivo **requirements.txt** en tu proyecto Django antes
 
 ![image](https://github.com/user-attachments/assets/e785d187-b349-40ba-b7d2-3f1d1117ef38)
 
-3 Preparamos nuestros archivos estáticos.
+## 2.3 Preparamos nuestros archivos estáticos
 
 Para ello vamos al archivo **local.py** de **settings**
 
@@ -139,7 +141,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 ```
 
-4 Ejecutamos el comando **collectstatic**
+## 2.4 Ejecutamos el comando collectstatic
 
 Antes de desplegar la aplicación, asegúrate de ejecutar este comando en tu entorno local para recopilar los archivos estáticos. Este comando moverá todos los archivos estáticos al directorio definido en STATIC_ROOT.
 
@@ -149,25 +151,20 @@ Antes de desplegar la aplicación, asegúrate de ejecutar este comando en tu ent
 1397 static files copied to 'C:\GitHub\emp3\empleado\staticfiles'.
 ```
 
-5 Actualiza tu repositorio en GitHub
+Actualiza tu repositorio en GitHub
 
-6 SECRET_KEY
+## 2.5 SECRET_KEY
 
-Debemos sacar el valor en duro de SECRET_KEY, valor que vamos a ingresar como variable de entorno en nuestro servidor.
+Debemos sacar el valor en duro SECRET_KEY del archivo **base.py** de **settings**, valor que vamos a ingresar como variable de entorno en DigitalOcean.
 
-Vamos a nuestro archivo **base.py** de **settings**
-
-en **base.py** copiemos SECRET_KEY y la guardamos y hacemos el siguiente reemplazo en el archivo **base.py**:
+Copiamos la SECRET_KEY y la guardamos. Hacemos el siguiente reemplazo en el archivo **base.py**:
 
 SECRET_KEY = 'django-insecure-9xh%=ob5sj*g*r5&ii^r$mu9bs0w*t09ni*vko67=*z402som8'
 
-```
+```python
 import os
-
 # some code
-
 SECRET_KEY = os.environ.get('SECRET_KEY')
-
 # some code
 ```
 
