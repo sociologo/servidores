@@ -55,7 +55,8 @@ Creamos un nuevo repositorio **emp3** en GitHub y los clonamos en una carpeta lo
 
 2 Ejecutamos `git clone https://github.com/sociologo/emp3.git`
 
-![image](https://github.com/user-attachments/assets/35b683ac-44ef-413a-b969-54ff4b9836b6)
+![image](https://github.com/user-attachments/assets/d8137d7e-01de-4f72-a1ff-3ca31169d509)
+
 
 3 Copiamos el proyecto en un nuevo repositorio local, lo subimos a GitHub y lo ejecutamos desde la carpeta  local para cerciorarnos de que el proyecto ejecute correctamente.
 
