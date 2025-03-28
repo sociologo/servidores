@@ -225,14 +225,17 @@ Y llegamos a
   <img src="https://github.com/user-attachments/assets/62b1258f-7e45-4d84-b078-6f9b43eec357" alt="image" width="60%">
 </p>
 
-
 2 Apuntamos al mismo repositorio con autorun y le damos a `Next`
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e4e50306-5da7-4d07-972c-26380c097d03" alt="image" width="60%">
+</p>
+
 3 Le cambiamos nombre y lo definimos como un recurso del tipo sitio estático:
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/12ed65e4-afa2-484c-afae-f840fe110433" alt="image" width="60%">
 </p>
-
 
 4 Debemos establecer como directorio de salida `staticfiles` y como ruta requerida http `/static` y le damos a `Add resources`
 <p align="center">
