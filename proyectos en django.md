@@ -78,7 +78,7 @@ C:\mis_entornos\entorno_3\Scripts> activate
 
 # 2 Configurando el proyecto
 
-2.1 Instalando Gunicorn
+## 2.1 Instalando Gunicorn
 
 Es necesario para incluir Gunicorn dentro del archivo requirements.txt para asegurarnos de que nuestra aplicación Django sea capaz de comunicarse con los servidores que trabajan tras bambalinas en DigitalOcean.
 
