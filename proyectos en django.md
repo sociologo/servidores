@@ -188,7 +188,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 ## 3.2 Configurando nuestro proyecto en la App Platform
 
-- Renombramos al aplicación y seleccionamos los recursos mas baratos
+- Renombramos al aplicación y seleccionamos los recursos más baratos
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ef720672-ef3a-4a14-9789-d215b411879b" alt="image" width="60%">
@@ -204,7 +204,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
   <img src="https://github.com/user-attachments/assets/d4739be0-411a-4b5f-8bbc-38ff7013f8b5" alt="image" width="60%">
 </p>
 
-- Le damos un nombre a la app y creamos la aplicacion con `Create App`
+- Le damos un nombre a la app y creamos la aplicación con `Create App`
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ce891684-f698-4fec-a833-d9a7652c075f" alt="image" width="60%">
