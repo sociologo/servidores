@@ -275,12 +275,9 @@ aca voy
 
 ![image](https://github.com/user-attachments/assets/75523dfa-8f87-4b66-8c03-a0386a54adc5)
 
-
-
-
-
-
 ![image](https://github.com/user-attachments/assets/82bb2445-0957-4ff3-91f3-3ef0a0ad1252)
+
+54 Modificamos el archivo **local.py** de **settings** como se indica:
 
 ```python
 import os
