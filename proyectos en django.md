@@ -238,25 +238,6 @@ y nos queda:
 ![image](https://github.com/user-attachments/assets/f74e5364-3bca-41d9-9d48-b62ad6797321)
 ![image](https://github.com/user-attachments/assets/42150751-39e8-4b47-adc5-82782e10b26d)
 
-
-
-
-***
-***
-<br>
-<br>
-<br>
-<br>
-
-aca voy
-
-<br>
-<br>
-<br>
-<br>
-***
-***
-
 # 5 Creación de y conexión a la base de datos Postgres
 
 51 Agregamos a nuestra aplicación empleado-app una base de datos. DigitalOcean automáticamente nos dirigirá a la creación de una base de datos Postgres:
@@ -319,11 +300,28 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 logre la coneccion. lo que debo hacer ahora es en la consola de digital ocean un make migrate
 
-56 En la consola de DigitalOcean hacemos las migraciones y
+56 En la consola de DigitalOcean hacemos las migraciones para construir la estructura de nuestra base de datos
 
 python manage.py migrate
 
-ya está.
+57 En la consola de DigitalOcean creamos un superusuario
+
+python manage.py createsuperuser
+
+y ya está.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
