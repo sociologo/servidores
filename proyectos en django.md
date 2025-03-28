@@ -255,9 +255,48 @@ aca voy
 ***
 ***
 
-logre la coneccion. lo que debo hacer ahora es en la consola de digital ocean un make migrate
+![image](https://github.com/user-attachments/assets/82bb2445-0957-4ff3-91f3-3ef0a0ad1252)
 
-![image](https://github.com/user-attachments/assets/b1a6e26d-508a-4c1d-9e65-aa1c2b53a5f7)
+```python
+import os
+from .base import *
+from urllib.parse import urlparse
+
+DEBUG = True
+ALLOWED_HOSTS = ['*']
+
+DATABASE_URL = os.environ.get('DATABASE_URL')
+
+db_info = urlparse(DATABASE_URL)
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': db_info.path[1:],  # Extrae el nombre de la base de datos desde la URL
+        'USER': db_info.username,  # Extrae el nombre de usuario desde la URL
+        'PASSWORD': db_info.password,  # Extrae la contraseña desde la URL
+        'HOST': db_info.hostname,  # Extrae el host desde la URL
+        'PORT': db_info.port,  # Extrae el puerto desde la URL
+        'OPTIONS': {
+            'sslmode': 'require',  # Asegura la conexión SSL
+        },
+    }
+}
+
+
+STATIC_URL = 'static/'
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+STATICFILES_DIRS = [
+   BASE_DIR / "static",
+]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+```
+
+logre la coneccion. lo que debo hacer ahora es en la consola de digital ocean un make migrate
 
 
 
