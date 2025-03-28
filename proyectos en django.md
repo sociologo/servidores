@@ -263,6 +263,22 @@ aca voy
 
 ![image](https://github.com/user-attachments/assets/f41c3878-e487-404c-8d2c-9790c131fb56)
 
+![image](https://github.com/user-attachments/assets/f22c274d-3707-407a-8c7a-a6c0e568f2dd)
+
+52 Copiamos el string de conexión
+
+![image](https://github.com/user-attachments/assets/a63c4e0d-ece7-44cb-b51d-f60fad7f889d)
+
+53 Añadimos el string de conexión como una nueva variable de entorno encriptada de nuestra aplicación:
+
+![image](https://github.com/user-attachments/assets/99474450-74cb-4b13-9740-cfc4ee96886c)
+
+![image](https://github.com/user-attachments/assets/75523dfa-8f87-4b66-8c03-a0386a54adc5)
+
+
+
+
+
 
 ![image](https://github.com/user-attachments/assets/82bb2445-0957-4ff3-91f3-3ef0a0ad1252)
 
