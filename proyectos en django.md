@@ -19,6 +19,7 @@ Conocimientos previos necesarios:
   * [1.1 Nuestro proyecto en local](#11-Nuestro-proyecto-en-local)
   * [1.2 Subiendo una copia del proyecto a GitHub](#12-Subiendo-una-copia-del-proyecto-a-GitHub)
 * [2 Configurando el proyecto](#2-Configurando-el-proyecto)
+  * [2.1 Instalando Gunicorn](#21-Instalando-Gunicorn)
 * [3 Configuración en DigitalOcean](#3-Configuración-en-DigitalOcean)
 * [4 Cargando los archivos estáticos](#4-Cargando-los-archivos-estáticos)
 * [5 Creación de y conexión a la base de datos Postgres](#5-Creación-de-y-conexión-a-la-base-de-datos-Postgres)
@@ -59,28 +60,27 @@ Creamos un nuevo repositorio **emp3** en GitHub y los clonamos en una carpeta lo
 
 Copiamos el proyecto en el nuevo repositorio local, lo subimos a GitHub y lo ejecutamos desde la carpeta local para cerciorarnos de que el proyecto ejecute correctamente.
 
-![image](https://github.com/user-attachments/assets/d92704fa-0b7b-4c58-a58c-6b43697824e9)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d92704fa-0b7b-4c58-a58c-6b43697824e9" alt="image" width="60%">
+</p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/802bfe61-0a42-40e4-9095-1ced14c2279b" alt="image" width="60%">
+  <img src="https://github.com/user-attachments/assets/5f69690f-a407-4324-bb2a-6d55811ef7b3" alt="image" width="60%">
 </p>
 
 ```bash
 C:\Users\chris> cd /
 C:\> cd mis_entornos/entorno_3/Scripts
 C:\mis_entornos\entorno_3\Scripts> activate
-(entorno_3) C:\mis_entornos\entorno_3\Scripts> cd \GitHub\emp3\emp3\empleado
+(entorno_3) C:\mis_entornos\entorno_3\Scripts> cd \GitHub\emp3\empleado
 (entorno_3) C:\GitHub\emp3\empleado> python manage.py runserver
 ```
 
 # 2 Configurando el proyecto
 
-21 Instalamos Gunicorn
+2.1 Instalando Gunicorn
 
-Es necesario para incluir Gunicorn dentro del archivo requirements.txt
-
-Lo hacemos para asegurarnos de que nuestra aplicacion Django sea capaz de comunicarse con los servidores que trabajan tras bambalinas en DigitalOcean.
+Es necesario para incluir Gunicorn dentro del archivo requirements.txt para asegurarnos de que nuestra aplicación Django sea capaz de comunicarse con los servidores que trabajan tras bambalinas en DigitalOcean.
 
 ```
 (entorno_3) C:\GitHub\emp3\emp3\empleado>pip install gunicorn
