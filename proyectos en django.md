@@ -172,15 +172,15 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 ## 3.1 Subir nuestro proyecto a la App Platform
 
-- Vamos a la página `https://cloud.digitalocean.com/apps`
+- Vamos a la página `https://cloud.digitalocean.com/apps`.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7d4ffa5a-f6dd-4c1e-a6c3-0690666a3094" alt="image" width="60%">
 </p>
 
-- Damos click a Create App con proveedor de código fuente GitHub
+- Damos click a `Create App` con proveedor de código fuente GitHub.
 
-- Conectamos con el repositorio GitHub y seleccionamos **autodeploy** para que cada cambio en el repositorio se actualice automáticamente en el servidor
+- Conectamos con el repositorio GitHub y seleccionamos **autodeploy** para que cada cambio en el repositorio se actualice automáticamente en el servidor. Damos click en `Next`.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/bfe6b9f9-89ba-42e5-b810-4041d3dd0d8a" alt="image" width="80%">
