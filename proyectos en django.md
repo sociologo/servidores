@@ -259,6 +259,11 @@ aca voy
 
 # 5 Creación de y conexión a la base de datos Postgres
 
+51 Agregamos a nuestra aplicación empleado-app una base de datos. DigitalOcean automáticamente nos dirigirá a la creación de una base de datos Postgres:
+
+![image](https://github.com/user-attachments/assets/f41c3878-e487-404c-8d2c-9790c131fb56)
+
+
 ![image](https://github.com/user-attachments/assets/82bb2445-0957-4ff3-91f3-3ef0a0ad1252)
 
 ```python
