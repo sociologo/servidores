@@ -1,4 +1,4 @@
-# Cómo mplementar una aplicación Django en Digital Ocean como APP
+# Cómo implementar una aplicación Django en Digital Ocean como APP
 
 ***
 ***
