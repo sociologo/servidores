@@ -31,12 +31,11 @@ Copiamos el proyecto en el nuevo repositorio local, lo subimos a GitHub y lo eje
 
 ```bash
 C:\Users\chris> cd /
-C:\> cd \Users\chris\Documentos\GitHub\react\proyecto-egator
-C:\Users\chris\Documentos\GitHub\react\proyecto-egator>npm start
+C:\> cd \GitHub\react3\proyecto-egator
+C:\GitHub\react3\proyecto-egator> npm start
 ```
 <br>
 <br>
-
 
 
 
