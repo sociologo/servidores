@@ -85,10 +85,11 @@ C:\GitHub> npm start
 
 para subir tu repo local a GitHub:
 
+```bash
 $ git add .
 $ git commit -m "Tu mensaje aquí"
 $ git push origin main
-
+```
 
 ![image](https://github.com/user-attachments/assets/cdd85f45-b890-470f-936c-1955b9c8f3b5)
 
