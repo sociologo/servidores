@@ -77,16 +77,21 @@ npm start
 ```bash
 C:\Users\chris> cd /
 C:\> cd \GitHub\
-C:\GitHub> npx create-react-app react7
+C:\GitHub> npx create-react-app react8
 # (no hay que construir la carpeta pues se crea sola)
-C:\GitHub> cd react7
-C:\GitHub> npm start
+C:\GitHub> cd react8
+C:\GitHub\react8> npm start
 ```
 
 Asegúrate de haber ejecutado `npm run build`
 
+C:\GitHub\react8> npm run build
 
 para subir tu repo local a GitHub:
+
+En GitHub desktop damos click a `File` y `Add local repository`. Seleccionamos el local path `C:\GitHub\react8` y damos click en `Add repository`. Hacemos click en `Publish repository`.
+
+Para hacer push desde local:
 
 ```bash
 $ git add .
