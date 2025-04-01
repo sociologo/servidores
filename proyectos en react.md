@@ -64,7 +64,7 @@ Repetimos el proceso para un repositorio Github **react6**
 `git clone https://github.com/sociologo/react6.git`
 
 
-# 2 Error
+## Un Error
 
 Tuve un error extraño. Git no me deja hacer el push pues afirma tengo archivos gigantes.
 
