@@ -41,13 +41,28 @@ C:\GitHub\react5\proyecto-egator> npm start
 
 ## Un problema
 
-Nos encontramos con la sorpresa al subir e proyecto React completo de que se despliega en Azure solo una página en blanco. Debemos determinar en que moneto se produce esto porque hasta cierto punto el despliegue se produce bien.
+Nos encontramos con la sorpresa al subir e proyecto React completo de que se despliega en Azure solo una página en blanco. Debemos determinar en que momento se produce esto porque hasta cierto punto el despliegue se produce bien.
 
 Construimos de nuevo la aplicacion en C:\GitHub\react6 siguiendo las instrucciones de `proyecto-egator-ejer-1.md` hasta el punto 14 incluyéndolo.
 
+Verifiquemos que despliegue bien:
+
+```bash
+C:\Users\chris> cd /
+C:\> cd \GitHub\react6\
+C:\GitHub\react6> npm start
+```
+<br>
+<br>
+![image](https://github.com/user-attachments/assets/f2bcbf6f-f85b-49e7-a930-d59e7196ae9b)
+![image](https://github.com/user-attachments/assets/4f779a26-b62b-46bd-8a40-f20dd3ab08e7)
+
+Repetimos el proceso para un repositorio Github **react6**
+
+# 2 
 
 
-# 2 Configurar un dominio personalizado existente en Azure App Service
+# 3 Configurar un dominio personalizado existente en Azure App Service
 
 Tengo una aplicacion React desplegada en Azure:
 
