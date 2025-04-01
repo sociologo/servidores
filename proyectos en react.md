@@ -91,6 +91,15 @@ C:\GitHub> npm start
 
 # 2 Implementar una aplicación ReactJS en Azure App Service desde VS Code
 
+![image](https://github.com/user-attachments/assets/f8a81978-c617-4796-9c3a-dc23db93d1aa)
+
+![image](https://github.com/user-attachments/assets/e046f13e-e66e-4196-b071-2b60bd9a5e49)
+
+![image](https://github.com/user-attachments/assets/63e3dee2-ea21-40e7-b236-c66ede2c49cb)
+
+![image](https://github.com/user-attachments/assets/a979190a-b56a-47ab-add8-119d1ee49f89)
+
+
 # 3 Configurar un dominio personalizado existente en Azure App Service
 
 Tengo una aplicacion React desplegada en Azure:
