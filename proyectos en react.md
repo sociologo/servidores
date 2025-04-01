@@ -61,6 +61,9 @@ C:\GitHub\react6> npm start
 
 Repetimos el proceso para un repositorio Github **react6**
 
+`git clone https://github.com/sociologo/react6.git`
+
+
 # 2 
 
 
