@@ -89,7 +89,7 @@ C:\GitHub> npm start
 <br>
 <br>
 
-
+# 2 Implementar una aplicación ReactJS en Azure App Service desde VS Code
 
 # 3 Configurar un dominio personalizado existente en Azure App Service
 
