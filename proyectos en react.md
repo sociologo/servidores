@@ -64,7 +64,31 @@ Repetimos el proceso para un repositorio Github **react6**
 `git clone https://github.com/sociologo/react6.git`
 
 
-# 2 
+# 2 Error
+
+Tuve un error extraño. Git no me deja hacer el push pues afirma tengo archivos gigantes.
+
+Voy a repetir todo el proceso con un repositorio GitHub react7, una carpeta local react7 y una app basica.
+
+npx create-react-app nombre-del-proyecto
+cd nombre-del-proyecto
+npm start
+
+```bash
+C:\Users\chris> cd /
+C:\> cd \GitHub\
+C:\GitHub> npx create-react-app react7
+# (no hay que construir la carpeta pues se crea sola)
+C:\GitHub> cd react7
+C:\GitHub> npm start
+```
+
+![image](https://github.com/user-attachments/assets/cdd85f45-b890-470f-936c-1955b9c8f3b5)
+
+
+<br>
+<br>
+
 
 
 # 3 Configurar un dominio personalizado existente en Azure App Service
