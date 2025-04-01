@@ -83,6 +83,9 @@ C:\GitHub> cd react7
 C:\GitHub> npm start
 ```
 
+Asegúrate de haber ejecutado `npm run build`
+
+
 para subir tu repo local a GitHub:
 
 ```bash
