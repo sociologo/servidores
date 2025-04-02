@@ -14,7 +14,7 @@ https://learn.microsoft.com/es-mx/azure/app-service/quickstart-nodejs?tabs=windo
 
 1 Una App
 
-Construímos una App React básica y construímos el archivo `build`
+Construímos una App React básica y el archivo `build`
 
 ```bash
 C:\Users\chris> cd /
