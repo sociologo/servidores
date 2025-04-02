@@ -5,7 +5,36 @@ https://www.csharp.com/article/deploy-reactjs-app-to-azure-app-service-from-vs-c
 
 * [1 Preparando el proyecto](#1-Preparando-el-proyecto)
   * [1.1 Nuestro proyecto en local](#11-Nuestro-proyecto-en-local)
- 
+
+***
+***
+
+1 Una App
+
+Construímos una App React básica y construímos el archivo `build`
+
+```bash
+C:\Users\chris> cd /
+C:\> cd \GitHub\
+C:\GitHub> npx create-react-app react9
+# (no hay que construir la carpeta pues se crea sola)
+C:\GitHub> cd react9
+C:\GitHub\react9> npm start
+C:\GitHub\react9> npm run build
+```
+***
+***
+
+2 Subir la App a GitHub
+
+para subir tu repo local a GitHub:
+
+En GitHub desktop damos click a `File` y `Add local repository`. Seleccionamos el local path `C:\GitHub\react8` y damos click en `Add repository`. Hacemos click en `Publish repository`.
+
+
+
+
+
 
 # 1 Preparando el proyecto
 
@@ -70,26 +99,9 @@ Tuve un error extraño. Git no me deja hacer el push pues afirma tengo archivos 
 
 Voy a repetir todo el proceso con un repositorio GitHub react7, una carpeta local react7 y una app basica.
 
-npx create-react-app nombre-del-proyecto
-cd nombre-del-proyecto
-npm start
 
-```bash
-C:\Users\chris> cd /
-C:\> cd \GitHub\
-C:\GitHub> npx create-react-app react8
-# (no hay que construir la carpeta pues se crea sola)
-C:\GitHub> cd react8
-C:\GitHub\react8> npm start
-```
 
-Asegúrate de haber ejecutado `npm run build`
 
-C:\GitHub\react8> npm run build
-
-para subir tu repo local a GitHub:
-
-En GitHub desktop damos click a `File` y `Add local repository`. Seleccionamos el local path `C:\GitHub\react8` y damos click en `Add repository`. Hacemos click en `Publish repository`.
 
 Para hacer push desde local:
 
