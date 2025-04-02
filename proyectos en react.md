@@ -14,19 +14,36 @@ https://learn.microsoft.com/es-mx/azure/app-service/quickstart-nodejs?tabs=windo
 
 1 Una App
 
-Construímos una App React básica y el archivo `build`
+Construímos una App React básica y el archivo `build`:
 
 ```bash
 C:\Users\chris> cd /
 C:\> cd \GitHub\
-C:\GitHub> npx create-react-app react9
+C:\GitHub> npx create-react-app react10
 # (no hay que construir la carpeta pues se crea sola)
-C:\GitHub> cd react9
-C:\GitHub\react9> npm start
-C:\GitHub\react9> npm run build
+C:\GitHub> cd react10
+C:\GitHub\react10> npm start
+C:\GitHub\react10> npm run build
 ```
+
+2 Creamos la App en Azure:
+
+https://signup.azure.com/
+
+![image](https://github.com/user-attachments/assets/9bd5aa17-3606-4396-9ed8-04745c161461)
+![image](https://github.com/user-attachments/assets/88212ef5-ca13-4e83-a041-1c75f693478d)
+![image](https://github.com/user-attachments/assets/d0fd65c8-46f4-491e-80c3-a962f3703a61)
+
+
+
+
 ***
 ***
+
+
+
+
+
 
 2 Subir la App a GitHub
 
